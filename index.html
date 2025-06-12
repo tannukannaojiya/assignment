@@ -1,104 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WASender - Landing Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
-    }
-    .main-heading {
-      font-size: 52px;
-      font-weight: 700;
-    }
-    .sub-heading {
-      font-size: 18px;
-      margin-bottom: 1.5rem;
-    }
-    .features-list {
-      font-size: 16px;
-      margin-bottom: 2rem;
-    }
-    .features-list li::before {
-      content: '✔';
-      margin-right: 0.5rem;
-      color: green;
-    }
-    .whatsapp-section {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .btn-green {
-      background-color: #28c76f;
-      color: #fff;
-      font-weight: 600;
-    }
-    .btn-green:hover {
-      background-color: #20b365;
-    }
-  </style>
-</head>
-<body>
-  <div class="container py-5">
-    <nav class="d-flex justify-content-between align-items-center mb-5">
-      <h4 class="fw-bold">WASender</h4>
-      <div>
-        <a href="#" class="me-3 text-dark">Home</a>
-        <a href="#" class="me-3 text-dark">WhatsApp API</a>
-        <a href="#" class="me-3 text-dark">Demo</a>
-        <a href="#" class="me-3 text-dark">Pricing</a>
-        <a href="#" class="me-3 text-dark">Blog</a>
-        <a href="#" class="text-dark">FAQs</a>
-      </div>
-      <button class="btn btn-green">Start Free Trial</button>
-    </nav>
-
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h1 class="main-heading">Don't just send expensive WhatsApp campaigns</h1>
-        <p class="sub-heading">Combine WhatsApp with AI to automatically engage, qualify, and convert leads</p>
-        <ul class="features-list list-unstyled">
-          <li>Ban proof WhatsApp campaigns</li>
-          <li>Auto-engage using AI</li>
-          <li>No coding skills needed</li>
-        </ul>
-        <button class="btn btn-green me-2">Start Free Trial</button>
-        <button class="btn btn-outline-secondary">Book Live Demo</button>
-      </div>
-      <div class="col-md-6 whatsapp-section">
-        <div class="mb-2">
-          <strong>38%</strong> avg. reply rate
-        </div>
-        <img src="https://via.placeholder.com/300x100?text=Chat+Image" class="img-fluid rounded mb-2" alt="Chat" />
-        <div class="mb-2">
-          <strong>20+</strong> AI-powered replies
-        </div>
-        <div class="text-success">
-          <p>Hi Amit 👋<br>
-          Let AI reply 24/7 on your WhatsApp! Try it free for 7 days.</p>
-          <p><strong>✅</strong> Auto respond to common queries<br>
-          <strong>✅</strong> Personalized replies using customer info<br>
-          <strong>✅</strong> Works 24/7 on your WhatsApp</p>
-          <p>You can try it free for 7 days</p>
-        </div>
-        <div>
-          <button class="btn btn-green w-100">Try DEMO or Start Trial</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,7 +11,8 @@
   overflow: hidden;
  }
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      /* font-family: 'Plus Jakarta Sans', sans-serif; */
+      font-family: Arial, sans-serif;
       background-color: #f8f9fa;
       color: #212529;
       overflow-x: hidden;
@@ -162,6 +62,7 @@ bottom: 105%;
 strong{
   color:#212529;
 }
+
 .whatsapp-message-client{
   margin-top: 5px ;
   position: absolute;
@@ -182,6 +83,7 @@ strong{
 
 }
 .whatsapp-message-client img{
+  margin-top: 2px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -208,20 +110,34 @@ strong{
       color: green;
     }
     .text-success{
+      margin-top: 10px;
+      border-radius: 2%;
       background: #dcf8c6;
-      padding: 10px 10px 10px 10px;
+      padding: 10px 10px 3px 10px;
     }
-    .text-success p{
-      color: #212529;
-      
+    .text-success-p {
+      color: #212529; 
     }
+    .demo{
+      text-align: center;
+      color: green;
+      font-weight: bold;
+    }
+    .chat-img{
+      height: 150px;
+      width: 407px;
+      border-radius: 2%;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+  
     .whatsapp-section {
       margin-left: 85px;
       width: 450px;
+      height: 520px;
       font-size: 12px;
       background-color: #fff;
       border-radius: 8px;
-      padding: 1rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       /* animation: floatChat 1s ease-in-out infinite; */
     }
@@ -274,14 +190,12 @@ strong{
       width: 30px;
       height: 30px;
     }
-    .whatsapp-message-top{
-     
-    }
+
     .whatsapp-message-bottom{
       margin-top: 52px;
       border-radius: 2%;
       background: #dcf8c6;
-      padding: 15px 15px 15px 15px;
+      padding: 15px 15px 5px 15px;
     }
     span{
       color: #1D2220;
@@ -292,8 +206,8 @@ strong{
 <body>
   <div class="container">
     <nav class="d-flex justify-content-between align-items-center mb-4 ">
-      <h4 class="fw-bold">WASender</h4>
-      <div>
+      <h4 class="fw-bold mt-3">WASender</h4>
+      <div class="mt-2">
         <a href="#" class="me-3 text-dark text-decoration-none fw-bold">Home</a>
         <a href="#" class="me-3 text-dark text-decoration-none">WhatsApp API</a>
         <a href="#" class="me-3 text-dark text-decoration-none">Demo</a>
@@ -301,7 +215,7 @@ strong{
         <a href="#" class="me-3 text-dark text-decoration-none">Blog</a>
         <a href="#" class="me-3 text-dark text-decoration-none">FAQs</a>
       </div>
-      <button class="btn btn-green">Start Free Trial</button>
+      <button class="btn btn-green mt-3">Start Free Trial</button>
     </nav>
 
     <div class="row align-items-center">
@@ -319,17 +233,21 @@ strong{
       
         <div class="col-md-6 whatsapp-section">
           <div class="whatsapp-message-top">
-        <div class=" half-outside-message addss">
+        
+        <div class="text-success">
+          <div class=" half-outside-message addss">
           <strong>30%</strong> Avg reply rate
         </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcgYny-GfmGeVoPssFVD4av3uNUqCO9FDtrp1UF6ZWvlBTh4NsCzFPGDcv0NaHZDnjDo&usqp=CAU" class="img-fluid rounded mb-2" alt="Chat" />
+        
+          <img class="chat-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcgYny-GfmGeVoPssFVD4av3uNUqCO9FDtrp1UF6ZWvlBTh4NsCzFPGDcv0NaHZDnjDo&usqp=CAU" alt="Chat" />
+        
         <div class=" half-outside-message adds">
           <strong>20+</strong> AI-powered replies
         </div>
-        <div class="text-success">
-          <p>Hi Amit 👋<br>
-          Let AI reply 24/7 on your WhatsApp! 
-          <br class="demo">Try it free for 7 days.✨</br></p>
+          <p class="text-success-p">Hi Amit 👋<br>
+          Let AI reply 24/7 on your WhatsApp!</p> 
+          <hr/>
+          <p class="demo">Try it free for 7 days.✨</p>
           </div>
           <div class="whatsapp-message-client">
             <img src="https://randomuser.me/api/portraits/men/46.jpg">
@@ -345,16 +263,9 @@ strong{
           </div>
           </div>
         </div>
-        
-  
-        <!-- <div>
-          <button class="btn btn-green w-100">Try DEMO or Start Trial</button>
-        </div> -->
       </div>
       </div>
-    
   </div>
-
   <div class="whatsapp-icon">
     <div class="half-outside-message whatsapp-message">
     Hey! Need help?
