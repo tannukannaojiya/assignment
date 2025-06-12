@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat UI Clone</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .chat-container {
+      width: 400px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .top-tags {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: #888;
+      background-color: #fff;
+    }
+
+    .chat-banner {
+      background-color: #ccefff;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .chat-banner h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .chat-body {
+      padding: 12px;
+    }
+
+    .message {
+      margin: 12px 0;
+      max-width: 75%;
+      padding: 10px 14px;
+      border-radius: 15px;
+      line-height: 1.4;
+      font-size: 14px;
+    }
+
+    .bot {
+      background: #e7f6fd;
+      border-top-left-radius: 0;
+    }
+
+    .user {
+      background: #dcf8c6;
+      border-top-right-radius: 0;
+      margin-left: auto;
+    }
+
+    .avatar {
+      display: flex;
+      margin-top: 8px;
+      padding-left: 8px;
+    }
+
+    .avatar img {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      margin-right: -8px;
+      border: 2px solid #fff;
+    }
+
+    .whatsapp-icon {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      width: 48px;
+      height: 48px;
+      background-color: #25d366;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="top-tags">
+    <div>38% Avg reply rate</div>
+    <div>20+ hrs saved weekly</div>
+  </div>
+
+  <div class="chat-banner">
+    <h2>CHAT</h2>
+  </div>
+
+  <div class="chat-body">
+    <div class="message bot">
+      Hi Amit 👋 <br />
+      Let AI reply 24/7 on your WhatsApp! Try it free for 7 days.✨<br />
+      <strong style="color: green;">Try it free for 7 days</strong>
+    </div>
+
+    <div class="message user">
+      Could you please tell me more about this.?
+    </div>
+
+    <div class="message bot">
+      Of course, Amit! 👋 <br />
+      ✅ Auto respond to common queries <br />
+      ✅ Personalize replies using customer info <br />
+      ✅ Works 24/7 on your WhatsApp <br /><br />
+      You can try it <strong>free for 7 days</strong><br />
+      👉 Type DEMO to book a call <br />
+      👉 Or type START to begin your free trial!
+    </div>
+
+    <div class="message user">
+      DEMO
+    </div>
+
+    <div class="avatar">
+      <img src="https://via.placeholder.com/32" alt="user1" />
+      <img src="https://via.placeholder.com/32" alt="user2" />
+      <img src="https://via.placeholder.com/32" alt="user3" />
+    </div>
+  </div>
+
+  <div class="whatsapp-icon">
+    🟢
+  </div>
+</div>
+
+</body>
+</html>
